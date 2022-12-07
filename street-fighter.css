@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(38, 38, 237);
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameLogo{
+    margin-top: 10px;
+
+    width: 240px;
+    height: 175px;
+
+    border-bottom: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameName{
+    width: 100%;
+    height: 100%;
+}
