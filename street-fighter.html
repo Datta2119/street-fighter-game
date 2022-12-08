@@ -61,13 +61,35 @@
     <br />
 
     <div class="resultContainer">
-        <div id="result">Winner!</div>
+        <div id="result"></div>
     </div>
 
     <div class="buttonContainer">
         <button id="reset">Reset</button>
         <button id="play">Simulate</button>
     </div>
+
+    <script src="street-fighter.js"></script>
+
+    <audio id="p1Attack" controls style="display: none;">
+        <source src="./sounds/fastpunch.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="p1Heal" controls style="display: none;">
+        <source src="./sounds/fastheal.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="p2Attack" controls style="display: none;">
+        <source src="./sounds/quickhit.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="p2Heal" controls style="display: none;">
+        <source src="./sounds/quickheal.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="victory" constols style="display: none;">
+        <source src="./sounds/victory.mp3" type="audio/mpeg" />
+    </audio>
 </body>
 
 </html>
