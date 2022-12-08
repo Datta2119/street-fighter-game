@@ -38,10 +38,13 @@ class Player {
     strike(player, enemy, attackDamage) {
         // Get random number between 1 - 10 and that is damageAmount
         let damageAmount = Math.ceil(Math.random() * attackDamage)
+
         // Subtract the enemy health with the damageAmount
         enemy.health -= damageAmount
+
         //  Update the game and DOM with updateGame
         updateGame(p1, p2, gameState)
+
         //  Return a message of 'player name attacks enemy name for damageAmount'
         return `${player.name} attacks ${enemy.name} for ${damageAmount} HP!`
     }
@@ -51,10 +54,16 @@ class Player {
         // Get random number between 1 - 5 and store that in healAmount
         let healAmount = Math.ceil(Math.random() * 5)
         // Add healAmount to players health
-        player.health += healAmount
-        //  Update the game and DOM with updateGame
-        updateGame(p1, p2, gameState)
+        let afterHealAmount = player.health + healAmount
 
+        if (afterHealAmount <= 100) {
+
+            // Add healAmount to players health
+            player.health += healAmount
+
+            //  Update the game and DOM with updateGame
+            updateGame(p1, p2, gameState)
+        }
         return `${player} heals for ${healAmount} HP!`
     }
 }
@@ -75,6 +84,14 @@ class Game {
 
         // Else if isOver is true AND p2 health is <= 0 then update message variable  to 'p2 WINS!'
         else if (isOver == true && p2.health <= 0) {
+            message = `${p1.name} Wins!`
+        }
+
+        else if (isOver == true && p1.health < p2.health) {
+            message = `${p2.name} Wins!`
+        }
+
+        else if (isOver == true && p2.health < p1.health) {
             message = `${p1.name} Wins!`
         }
 
