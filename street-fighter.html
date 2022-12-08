@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
 
     <link rel="stylesheet" href="street-fighter.css">
 </head>
+
 <body>
     <div id="gameLogo">
         <img src="./images/street-fighter-png-removebg.png" alt="" id="gameName">
@@ -18,7 +20,54 @@
     <div class="menu">
         <div class="p1Info">
             <div id="p1Name">Player 1</div>
+            <img src="https://static.wikia.nocookie.net/streetfighter/images/6/60/Vega-hdstance.gif/revision/latest/scale-to-width-down/308?cb=20100718232201"
+                alt="" id="p1Image">
+
+            <div class="playerControls">
+                <div class="attackDiv">
+                    <h3>Q:</h3>
+                    <button id="attack">Attack</button>
+                </div>
+
+                <div class="healDiv">
+                    <h3>A:</h3>
+                    <button id="heal">Heal</button>
+                </div>
+            </div>
+
+            <div id="p1Health">100</div>
+        </div>
+
+        <div class="p2Info">
+            <div id="p2Name">Player 2</div>
+            <img src="https://i.pinimg.com/originals/82/53/51/8253519f8da31e96b61f544edabcec40.gif" alt="" id="p2Image">
+
+            <div class="playerControls">
+                <div class="attackDiv">
+                    <h3>P:</h3>
+                    <button id="attack">Attack</button>
+                </div>
+
+                <div class="healDiv">
+                    <h3>L:</h3>
+                    <button id="heal">Heal</button>
+                </div>
+            </div>
+
+            <div id="p2Health">100</div>
         </div>
     </div>
+
+    <br />
+
+    <div class="resultContainer">
+        <div id="result">Winner!</div>
+    </div>
+
+    <div class="buttonContainer">
+        <button id="reset">Reset</button>
+        <button id="play">Simulate</button>
+    </div>
 </body>
+
 </html>

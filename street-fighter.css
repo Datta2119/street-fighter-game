@@ -1,12 +1,12 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: rgb(38, 38, 237);
-
+body {
     width: 100%;
     height: 100%;
 
@@ -14,15 +14,17 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-family: "VT323", monospace;
 }
 
-#gameLogo{
-    margin-top: 10px;
+#gameLogo {
+    /* margin-top: 0px; */
 
-    width: 240px;
-    height: 175px;
+    width: 150px;
+    height: 139px;
 
-    border-bottom: 1px solid red;
+    /* border-bottom: 1px solid red; */
 
     display: flex;
     flex-direction: column;
@@ -30,7 +32,161 @@ body{
     align-items: center;
 }
 
-#gameName{
+#gameName {
     width: 100%;
     height: 100%;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p1Info {
+    margin-top: 30px;
+
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#p1Name {
+    font-size: 30px;
+}
+
+#p1Image {
+    width: 130px;
+    height: 200px;
+}
+
+.playerControl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.attackDiv {
+    width: 100px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#attack {
+    width: 60px;
+    height: 30px;
+
+    border-radius: 50px;
+    outline: none;
+    background: #ffff01;
+    cursor: pointer;
+}
+
+.healDiv {
+    width: 100px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#heal {
+    width: 60px;
+    height: 30px;
+
+    border-radius: 50px;
+    outline: none;
+    background-color: #7dffff;
+    cursor: pointer;
+}
+
+#p1Health {
+    font-size: 50px;
+}
+
+.p2Info {
+    margin-top: 30px;
+
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#p2Name {
+    font-size: 30px;
+}
+
+#p2Image {
+    width: 130px;
+    height: 200px;
+}
+
+#p2Health {
+    font-size: 50px;
+}
+
+.resultContainer {
+    /* border: 1px solid red; */
+
+    width: 300px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#result {
+    font-size: 50px;
+    color: #3dff3d;
+}
+
+.buttonContainer {
+    margin-top: -56px;
+
+    width: 300px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#reset {
+    width: 100px;
+    height: 50px;
+
+    outline: none;
+    border-radius: 50px;
+    background: #ff8800;
+
+    color: white;
+    cursor: pointer;
+}
+
+#play {
+    width: 100px;
+    height: 50px;
+
+    border-radius: 50px;
+    background: #02cf02;
+    outline: none;
+
+    color: white;
+    cursor: pointer;
 }
